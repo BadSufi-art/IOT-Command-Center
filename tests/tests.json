@@ -1,0 +1,68 @@
+[
+  {
+    "name": "Open the IoT dashboard and inspect a device",
+    "sanity": true,
+    "viewport": "desktop",
+    "covers": [
+      "dashboard loading",
+      "device fleet retrieval",
+      "device detail view",
+      "persistent telemetry"
+    ],
+    "description": "Verifies the primary command-center workflow loads the fleet and opens a device with telemetry.",
+    "steps": [
+      "Open the IoT Command Center",
+      "Open Devices",
+      "Open any listed device"
+    ],
+    "expected": "The fleet is visible and the selected device shows its current sensors and telemetry history."
+  },
+  {
+    "name": "Installable app shell works on mobile",
+    "viewport": "mobile",
+    "covers": [
+      "responsive dashboard",
+      "installable web app manifest",
+      "mobile navigation"
+    ],
+    "description": "Verifies the dashboard remains usable at a mobile viewport and exposes the installable application shell.",
+    "steps": [
+      "Open the IoT Command Center at a mobile viewport",
+      "Navigate to Analytics",
+      "Navigate to Device Map"
+    ],
+    "expected": "The layouts remain usable on mobile and the application includes the manifest and service-worker-backed app shell."
+  },
+  {
+    "name": "Resolve an operational alert",
+    "viewport": "desktop",
+    "covers": [
+      "alert retrieval",
+      "alert resolution",
+      "persistent alert state"
+    ],
+    "description": "Verifies operators can resolve an active alert and see its resolved state.",
+    "steps": [
+      "Open Alert Center",
+      "Select an active alert",
+      "Press Resolve"
+    ],
+    "expected": "The alert changes to its resolved state and no longer requires an action."
+  },
+  {
+    "name": "Send a device command and inspect the event",
+    "viewport": "desktop",
+    "covers": [
+      "device command API",
+      "command acknowledgement",
+      "event stream"
+    ],
+    "description": "Verifies a device command creates an operational acknowledgement visible in Events.",
+    "steps": [
+      "Open Devices",
+      "Open an online device",
+      "Press Restart and then open Events"
+    ],
+    "expected": "A command acknowledgement event is visible in the event stream."
+  }
+]

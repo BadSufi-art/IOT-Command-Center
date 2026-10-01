@@ -1,0 +1,14 @@
+{
+  "methods": ["google", "apple", "x", "email"],
+  "headline": "Sign in to IoT Command Center",
+  "subtitle": "Authenticate to manage devices, telemetry, alerts, and operations.",
+  "style": {
+    "mode": "dark",
+    "accentColor": "#267ff1",
+    "backgroundColor": "#080b12",
+    "panelColor": "#0d131c",
+    "textColor": "#e7edf7",
+    "fontFamily": "Inter, system-ui, sans-serif",
+    "borderRadius": 10
+  }
+}
